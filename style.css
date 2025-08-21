@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header-content {
+    border-bottom: 1px solid rgba(122, 118, 118, 0.345);
+    position: sticky;
+    top: 0;
+    z-index: 20;    
+}
+
+.header-content .navbar {
+    padding: 20px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header-content .navbar .logo h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.header-content .navbar .logo h3 i {
+    font-size: 32px;
+}
+
+.header-content .navbar .nav-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-content .navbar .nav-menu ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    color: rgb(138, 152, 166);
+}
+
+.header-content .navbar .nav-menu  ul li a:hover {
+    color: white;
+}
+
+.header-content .navbar .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header-content .navbar .profile img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;    
+}
+
+.header-content .navbar .profile .button {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.rem;
+    padding: 5px 10px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.header-content .navbar .profile i {
+    color: lightslategray;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.header-content .navbar .profile i:hover {
+    color: white;
+}
+
+.main-content {
+    margin-top: 100px;
+}
+
+.main-content .top-section {
+    text-align: center;
+}
+
+.main-content .top-section .top-one {
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgba(122, 118, 118, 0.545);
+    padding: 7px;
+    display: inline-block;
+    background-color: rgb(35, 35, 35);
+    border-radius: 20px;
+}
+
+.main-content .top-section .top-two {
+    font-size: 43px;
+    margin: 10px 0;
+}
+
+.main-content .top-section .top-three {
+    font-size: 20px;
+        color: lightslategray;
+
+}
+
+.body-section {
+    margin: 40px 100px ;
+}
+
+
+.bungkus {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.body-section .card-wrapper {
+    background: rgb(19, 19, 19);
+    padding-bottom: 5px;
+    border-radius: 20px;
+    max-height: 480px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card-wrapper::-webkit-scrollbar-thumb {
+    background: lightslategray;
+    border-radius: 4px;
+}
+
+.card-wrapper::-webkit-scrollbar-thumb:hover {
+    background: lightslategray;
+}
+
+
+
+.body-section .card-wrapper .card-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding: 15px 0;
+    font-weight: 700;
+    color: lightslategray;
+    position: sticky;
+    z-index: 10;
+    background: rgb(19, 19, 19);
+
+    top: 0;
+    width: 100%;
+}
+
+.body-section .card-wrapper .card-title i {
+    font-size: 20px;
+}
+
+.body-section .card-wrapper .card-item {
+    background-color: rgb(25, 24, 24);
+    margin: 0 15px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(122, 118, 118, 0.345);
+    padding: 10px 15px 15px 15px;
+    transition: all 0.3s ease;
+}
+
+.body-section .card-wrapper .card-item:hover {
+    background-color: black;
+}
+
+.body-section .card-wrapper .card-item .card-date {
+    color: lightslategray;
+    font-weight: 400;
+}
+
+
+.body-section .card-wrapper .card-item .card-text {
+    color: lightslategray;
+    font-weight: 700;
+}
+
+.body-section .card-wrapper .card-item .card-btn {
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: rgb(176, 230, 16);
+
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(122, 118, 118, 0.345);
+    padding: 40px 70px 40px 40px;
+}
+
+
+.footer-content .footer-title a {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
+
+.footer-content .footer-title a i {
+    font-size: 25px;
+}
+
+.footer-content .footer-list {
+    display: flex;
+    gap: 100px;
+    margin-left: 30px;
+}
+
+.footer-content .footer-list .wrapper .list-title{
+    padding: 10px 0;
+}
+
+.footer-content .footer-list .wrapper ul li {
+    list-style: none;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.footer-content .footer-list .wrapper ul li a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: lightslategray;
+    align-items: center;
+}
+
+.social-media .list-social ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.social-media .list-social ul li a {
+    font-size: 27px;
+    color: lightslategray;
+    transform: translateY(-2);
+    -webkit-transform: translateY(-2);
+    -moz-transform: translateY(-2);
+    -ms-transform: translateY(-2);
+    -o-transform: translateY(-2);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+.social-media .list-social ul li a:hover {
+    color: white;
+
+}
+
+.social-media .author {
+    font-size: 13px;
+}
+
+.social-media .term ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media .term ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+@media(max-width:870px) {
+    .bungkus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-section {
+        margin: 40px 20px ;
+    }
+    
+    .header-content {
+        display: none   ;
+    }
+
+}
